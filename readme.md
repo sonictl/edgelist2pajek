@@ -1,15 +1,15 @@
 # Instruction
 ## Motivation
-The `edgelist` and `adjacency matrix` may be the most intuitive way of representing a network/graph.
-However, it's well known that a network contains not only connection/topology information, but also attributes of components such as the features of a node or classes of a relationship.
+The software Pajek has its own requirement for describing a graph/network. However, the `edgelist` and `adjacency matrix` may be the most intuitive way of representing a network/graph.
+Moreover, it's well known that a network contains not only connection/topology information, but also attributes of components such as the features of a node or classes of a relationship.
 The features/attributes of network components can be intuitively stored or organized by tables of database.
 Thus, most of the information of a network can be represented by an `edgelist`/`adjacency matrix` and several `tables`.
 
-In order to process/visualize a network with the tool `Pajek`, people need to prepare the network data as the form that can be processed/understand by Pajek.
+In order to process/visualize a network with the tool `Pajek`, people need to prepare the network data as the form that can be processed by Pajek.
 
-I looked into the wiki of Pajek and find that there is a relative convenient way to represent a network's information.
+I looked into the wiki of Pajek and find how to convert an edgelist into .net file for Pajek. Furthermore, the tables that stores attribute of vertices can also be converted into .clu file by this code.
 
-## The relative intuitive way to represent a network for Pajek
+## The way to represent a network for Pajek
 As the Pajek required, a network can be stored into several kinds of files such as: `.net`file, `.clu`file, `.vec`file, `.per`file, etc.
 
 Below is a `.net`file example, details are described in [link](http://courses.arch.ntua.gr/fsr%2F144992/Pajek-Manual.pdf) (page 8, Figure 3)
@@ -37,5 +37,5 @@ Note: the `<...>` is comment but not the content of the `.net` file.
 The `.net` file above defines the connections by Arcs(directed), and Edges(undirected) and their types(the number after the colon, `:` ) and Lables("Dining-table par...")
 
 ## How to use
-check the comments in the source code file `edgelist2pajek.py`
+Check the comments in the source code file `edgelist2pajek.py`
 

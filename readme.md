@@ -39,3 +39,6 @@ The `.net` file above defines the connections by Arcs(directed), and Edges(undir
 ## How to use
 Check the comments in the source code file `edgelist2pajek.py`
 
+## Alternative
+Use networkx can be a quite direct way to handle these tasks. 
+ref: https://networkx.github.io/documentation/networkx-2.3/reference/readwrite/pajek.html
